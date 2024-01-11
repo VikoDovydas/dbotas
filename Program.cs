@@ -73,6 +73,7 @@ internal class Program
 
         var antispam = new Antispam();
         await Antispam.HandleMessageAsync(client, e);
+        await GifHandler.HandleGifAsync(e);
     }
 
 
